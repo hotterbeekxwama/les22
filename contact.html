@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Carousel Template · Bootstrap v5.0</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="carousel.css" rel="stylesheet">
+    <style>
+      .btn {
+        border-radius: 0;
+      }
+      .rounded-circle {
+        width: 70%;
+        height: 20%;
+        background-color: blue;
+      }
+
+    .visually-hidden {
+      color: black;
+      font-weight: bold;
+    }
+
+    .carousel-control-prev-icon, .carousel-control-next-icon {
+      background-color: red;
+      font-weight: bold;
+    }
+     
+    </style>
+  </head>
+
+  <body>
+
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-sm">
+          <a class="navbar-brand" href="#">Carousel</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="over_mij.html">Over mij</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+
+    <!-- Drie wisselende blokken -->
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+            <div class="container">
+              <div class="carousel-caption text-start">
+                <h1>Homepage</h1>
+                <p>Welkom op mijn homepage. Om een indruk van mijn hobbies te geven, vindt u hier enkele foto's. Meer informatie daarover en over mijn werkzaamheden vindt u op de pagina "over mij"</p>
+                <p><a class="btn btn-lg btn-primary" href="index.html">Ga naar de homepage</a></p>
+              </div>
+            </div>
+          </div>
+  
+          <div class="carousel-item">
+            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Over mij.</h1>
+                <p>Hier vindt u meer informatie over mijn hobbies, maar naast hobbies heb ik ook een baan. Op deze pagina vindt u ook een beschrijving van mijn opleidingen en mijn werkzaamheden.</p>
+                <p><a class="btn btn-lg btn-primary" href="over_mij.html">Ga naar "Over mij"</a></p>
+              </div>
+            </div>
+          </div>
+  
+          <div class="carousel-item">
+            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+            <div class="container">
+              <div class="carousel-caption text-end">
+                <h1>Contact</h1>
+                <p>Wanneer u nog meer over mij wil weten, neem dan contact met me op.</p>
+                <!--<p><a class="btn btn-lg btn-primary" href="contact.html">Ga naar de contactpagina</a></p>-->
+              </div>
+            </div>
+          </div>
+
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Vorige</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Volgende</span>
+      </button>
+    </div>
+
+      <!--inleidende tekst hompage met daaronder drie tekstkolommen-->
+      <div class="container links">
+        <p>Welkom op mijn homepage. Om een indruk van mijn hobbies te geven, vindt u hier enkele foto's. Mijn belangrijkste hobby is handboogschieten. De eerste twee links zijn de twee verenigingen waar ik lid van ben. De derde link is naar volleybal, mijn andere sport.</br></p>
+        
+        <!-- drie tekstkolommen onder de wisselende blokken -->
+        <div class="row">
+          <div class="col-lg-4">
+            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+            <h2>De Zwarte Roos</h2>
+            <p>Bij deze vereniging ben ik begonnen met handboogschieten</p>
+            <p><a class="btn btn-danger" href="https://dezwarteroos.com/">Neem een kijkje op de site vande Zwarte Roos.</a></p>
+          </div>
+
+          <div class="col-lg-4">
+            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+            <h2>De Rozenjagers</h2>
+            <p>Om meer wedstrijden te kunnen schieten, ben ik ook lid geworden van de Rozenjagers.</p>
+            <p><a class="btn btn-danger" href="https://rozenjagers.nl/">Of neem een kijkje op de site van de Rozenjagers.</a></p>
+          </div>
+
+          <div class="col-lg-4">
+            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+            <h2>Volleybal</h2>
+            <p>Naast handboogschieten speel ik ook wekelijks volleybal.</p>
+            <p><a class="btn btn-danger" href="https://www.nevobo.nl/">Neem een kijkje op de site van de Nederlandse Volleybal bond</a></p>
+          </div>
+
+        </div>
+
+        <!--negen foto's in grid met maximaal drie foto's in een rij en de afbeelding aangepast naar de grootte van de grid-->
+        <div class="container-sm">
+          <h1>Enkele foto's om een indruk te geven</h1>
+      
+          <div class="row">
+              <div class="col-sm-4">
+                <img class="img-fluid" src="../hb2.jpg" alt="Image 1">
+                <p>Je begint met een kale boog </p>
+              </div>
+              <div class="col-sm-4">
+                <img class="img-fluid" src="../hb3.jpg" alt="Image 2">
+                <p>Dit probeer je te scoren: 3 tienen</p>
+              </div>
+              <div class="col-sm-4">
+                <img class="img-fluid" src="../hb4.jpg" alt="Image 3">
+                <p>Een boog voor gevorderen</p>
+              </div>
+              <div class="col-sm-4">
+                <img class="img-fluid" src="../hb5.jpg" alt="Image 4">
+                <p>Training is zo belangrijk</p>
+              </div>
+              <div class="col-sm-4">
+                <img class="img-fluid" src="../hb6.jpg" alt="Image 5">
+                <p>En aanwijzingen blijven altijd nodig</p>
+              </div>
+              <div class="col-sm-4">
+                <img class="img-fluid" src="../hb7.jpg" alt="Image 6">
+                <p>Na elke schietbeurt worden de pijlen uitgetrokken</p>
+              </div>
+              <div class="col-sm-4">
+                <img class="img-fluid" src="../v1.jpg" alt="Image 7">
+                <p>Een leeg volleybalveld</p>
+              </div>
+              <div class="col-sm-4">
+                <img class="img-fluid" src="../v2.jpg" alt="Image 8">
+                <p>Probeer de bal over het blok te spelen</p>
+              </div>
+              <div class="col-sm-4">
+                <img class="img-fluid" src="../v3.jpg" alt="Image 9">
+                <p>De meeste punten haal je met een goede opslag</p>
+              </div> 
+          </div>
+
+        </div>
+      
+      </div>
+
+
+      <footer class="container">
+        <p>2017–2021 Company, Inc.</p>
+      </footer>
+
+
+
+        <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+          
+  </body>
+</html>

@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Carousel Template · Bootstrap v5.0</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="carousel.css" rel="stylesheet">
+    <style>
+      .btn {
+        border-radius: 0;
+      }
+      .rounded-circle {
+        width: 70%;
+        height: 20%;
+        background-color: blue;
+      }
+
+    .visually-hidden {
+      color: black;
+      font-weight: bold;
+    }
+
+    .carousel-control-prev-icon, .carousel-control-next-icon {
+      background-color: red;
+      font-weight: bold;
+    }
+
+
+
+    
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  @media screen and (max-width: 600px) {
+    td, th {
+      display: block;
+      width: 100%;
+    }
+    td:nth-child(2) {
+      display: none;
+    }
+  }
+</style>
+
+
+
+     
+   
+  </head>
+
+  <body>
+
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-sm">
+          <a class="navbar-brand" href="#">Carousel</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="over_mij.html">Over mij</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+
+    <!-- Drie wisselende blokken -->
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+            <div class="container">
+              <div class="carousel-caption text-start">
+                <h1>Homepage</h1>
+                <p>Welkom op mijn homepage. Om een indruk van mijn hobbies te geven, vindt u hier enkele foto's. Meer informatie daarover en over mijn werkzaamheden vindt u op de pagina "over mij"</p>
+                <p><a class="btn btn-lg btn-primary" href="index.html">Ga naar de homepage</a></p>
+              </div>
+            </div>
+          </div>
+  
+          <div class="carousel-item">
+            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Over mij.</h1>
+                <p>Hier vindt u meer informatie over mijn hobbies, maar naast hobbies heb ik ook een baan. Op deze pagina vindt u ook een beschrijving van mijn opleidingen en mijn werkzaamheden.</p>
+                <!--<p><a class="btn btn-lg btn-primary" href="over_mij.html">Ga naar "Over mij"</a></p>-->
+              </div>
+            </div>
+          </div>
+  
+          <div class="carousel-item">
+            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+            <div class="container">
+              <div class="carousel-caption text-end">
+                <h1>Contact</h1>
+                <p>Wanneer u nog meer over mij wil weten, neem dan contact met me op.</p>
+                <p><a class="btn btn-lg btn-primary" href="contact.html">Ga naar de contactpagina</a></p>
+              </div>
+            </div>
+          </div>
+
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Vorige</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Volgende</span>
+      </button>
+    </div>
+
+      <!--inleidende tekst hompage met daaronder drie tekstkolommen-->
+      <div class="container links">
+        <p>Op deze pagina vindt u een drietal overzichten van datgene wat ik allemaal heb uitgespookt en heb bereikt.</br></p>
+        
+        <!-- drie tekstkolommen onder de wisselende blokken -->
+        <div class="row">
+          <div class="col-lg-4">
+            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+            <h2>Zuyd Hogeschool</h2>
+            <p>Hier krijg ik mijn salaris. Of ik het verdien laat ik aan anderen over</p>
+            <p><a class="btn btn-danger" href="https://zuyd.nl/" target="_blank">Ik ben met name werkzaam binnen het zogenaamde economische domein.</a></p>
+          </div>
+
+          <div class="col-lg-4">
+            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+            <h2>Open Universiteit</h2>
+            <p>Hier heb ik mijn voorlopig voorlaatste (?) opleiding genoten.</p>
+            <p><a class="btn btn-danger" href="https://www.ou.nl/" target="_blank">Misschien ook een aanrader voor uw professionel ontwikkeling?</a></p>
+          </div>
+
+          <div class="col-lg-4">
+            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+            <h2>NHA</h2>
+            <p>Hier volg ik op dit moment een interessante opleiding.</p>
+            <p><a class="btn btn-danger" href="https://www.nha.nl/" target="_blank">Voor (bijna) iedereen die zich wil ontwikkelen is hier een opleiding te vinden</a></p>
+          </div>
+
+        </div>
+
+        <!--tabellen met de aangegeven overzichten-->
+        <div class="container-sm">
+          <h1>Enkele overzichten</h1>
+      
+          
+        <div>
+            <h2>Mijn opleidingen</h2>
+            <table class="tabel">
+                <tr>
+                    <th class="cel_titel"> Periode</th><th class="cel_titel">Opleiding</th><th class="cel_titel">Afronding</th>
+                </tr>
+                <tr>
+                    <td>1972-1978</td><td>Bisschoppelijk College Echt</td><td>Diploma VWO</td>
+                </tr>
+                <tr>
+                    <td>1978-1985</td><td>Katholieke Universiteit Nijmegen</td><td>Drs Duitse taal-en letterkunde</td>
+                </tr>
+                <tr>
+                    <td>1987-1991</td><td>HEAO Sittard</td><td>Ing Bedrijfskundige Informatica</td>
+                </tr>
+                <tr>
+                    <td>2009-2011</td><td>Maastricht School of Management</td><td>MPhil/Onderzoeksmaster</td>
+                </tr>
+                <tr>
+                    <td>2008-2009</td><td>Technische Universiteit Eindhoven</td><td rowspan="3">Dr Science and Management</td>
+                </tr>
+                <tr>
+                    <td>2010-2011</td><td>Maastricht School of Management</td>
+                </tr>
+                <tr>
+                    <td>2011-2016</td><td>Open Universiteit Heerlen</td>
+                </tr>
+            </table>
+            <h2>Mijn werkervaring</h2>
+            <table class="tabel">
+                <tr>
+                    <th class="cel_titel"> Periode</th><th class="cel_titel">Werkgever</th><th class="cel_titel">Taak</th>
+                </tr>
+                <tr>
+                    <td>1978-1987</td><td>PTT</td><td>Postbode</td>
+                </tr>
+                <tr>
+                    <td>1985-1986</td><td>Militaire dienst/het leger</td><td>Officier Inlichtingen en Veiligheid/kapitein</td>
+                </tr>
+                <tr>
+                    <td>1986-1998</td><td>MEAO/MMO/MTS Venlo</td><td>Docent</td>
+                </tr>
+                <tr>
+                    <td>1991-heden</td><td>HEAO/HTS Sittard-Heerlen-Maastricht</td><td>Docent</td>
+                </tr>
+                <tr>
+                    <td>2012-heden</td><td>Universiteit Maastricht</td><td>Docent</td>
+                </tr>
+            </table>
+
+            <h2>Mijn sportieve activiteiten</h2>
+
+            <table>
+                <tr>
+                  <th>Periode</th>
+                  <th>vereniging</th>
+                  <th>Sport</th>
+                </tr>
+                <tr>
+                  <td>1970-1972</td>
+                  <td>Sportvereniging Patrick</td>
+                  <td>Wedstrijdzwemmen</td>
+                </tr>
+                <tr>
+                  <td>1973-1987</td>
+                  <td>Sportvereniging Patrick</td>
+                  <td>Handbal</td>
+                </tr>
+                <tr>
+                    <td>1998-heden</td>
+                    <td>Vrije tijds vereniging</td>
+                    <td>Volleybal</td>
+                  </tr>
+                  <tr>
+                    <td>2004-heden</td>
+                    <td>HBS de Zwarte Roos</td>
+                    <td>Handboogschieten-recurve</td>
+                  </tr>
+                  <tr>
+                    <td>2016-heden</td>
+                    <td>HBS de Rozenjagers</td>
+                    <td>Handboogschieten-recurve (was eerst compound)</td>
+                  </tr>
+              </table>
+        </div>
+
+
+        </div>
+      
+      </div>
+
+
+      <footer class="container">
+        <p><br>2017–2021 Company, Inc.</p>
+      </footer>
+
+
+
+        <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+          
+  </body>
+</html>
